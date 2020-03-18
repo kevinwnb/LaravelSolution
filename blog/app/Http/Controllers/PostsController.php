@@ -36,7 +36,6 @@ class PostsController extends Controller
      */
     public function store(Request $request)
     {
-        //create post
         $post = new Post;
         $post->title = $request->input('title');
         $post->body = $request->input('body');
@@ -78,7 +77,6 @@ class PostsController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //update post
         $post = Post::find($id);
         $post->title = $request->input('title');
         $post->body = $request->input('body');
@@ -95,7 +93,6 @@ class PostsController extends Controller
      */
     public function destroy($id)
     {
-        //Delete post
         $post = Post::find($id);
         $post->delete();
 

@@ -17,7 +17,7 @@ class PagesController extends Controller
     }
 
     public function services(){
-        $title = "S";
+        $title = "Services";
         return view('pages/services');
     }
 }

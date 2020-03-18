@@ -1,19 +1,37 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-    <title>{{config('app.name', 'Demo')}}</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Document</title>
 </head>
-
 <body>
-    @include('inc/navbar')
     <div class="container">
-        @yield('content')
+        <nav class="navbar navbar-expand-sm bg-light">
+
+            <!-- Links -->
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="/blog/public/">Index</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/blog/public/about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/blog/public/services">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/blog/public/posts">Posts</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/blog/public/posts/create">Create Post</a>
+              </li>
+            </ul>
+          
+          </nav>
+    @yield('content')
     </div>
 </body>
-
 </html>

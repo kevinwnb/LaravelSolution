@@ -1,5 +1,7 @@
 <?php
 
+use Illuminate\Support\Facades\Route;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -12,9 +14,7 @@
 */
 
 Route::get('/', 'PagesController@index');
-
-Route::get('/about', function(){return 'This is about';});
-
+Route::get('/about', 'PagesController@about');
 Route::get('/services', 'PagesController@services');
 
 Route::resource('posts', 'PostsController');
