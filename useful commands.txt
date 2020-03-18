@@ -1,0 +1,11 @@
+CREATE LARAVEL PROJECT
+composer create-project laravel/laravel <project name>
+
+CREATE CONTROLLER
+php artisan make:controller <controller name>
+
+CREATE MODEL WITH MIGRATION
+php artisan make:model <model name>(Post) -m
+
+MIGRATE
+php artisan migrate
